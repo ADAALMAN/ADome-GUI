@@ -1,3 +1,5 @@
+%Code generates a
+
 clear all;
 close all;
 clc;
@@ -22,21 +24,34 @@ Z1 = Y*sin(theta) + Z*cos(theta);
 [i, j] = find(triu(A));  
 B = permute(cat(3, xy(i, :),xy(j, :)), [3 1 2]);
 
-% Plot upper-part bucky 
-length = 1:40;
-plot3(B(:, length, 1), B(:, length, 2),B(:, length, 3));
-hold on
+% Generate upper-part bucky 
+Bx = B(:, :, 1);
+By = B(:, :, 2);
+Bz = B(:, :, 3);
 
-% Plot constellation points
-plot3(-Z1,Y1,X1,'.','markersize',30);
+[Bx_d, By_d, Bz_d] = upperBucky(Bx, By, Bz);
+
+
+% Plot bucky and constellation points
+lightGrey = 0.5*[1 1 1]; % It looks better if the lines are lighter
+
+plot3(Bx_d, By_d, Bz_d,'color', lightGrey);    %bucky
+hold on
+plot3(-Z1,Y1,X1,'.','markersize',20);   %constellation
 axis equal 
 grid on
 
 %Defining plot properties
-%lightGrey = 0.8*[1 1 1]; % It looks better if the lines are lighter
-xlim([-1 1]);
-ylim([-1 1]);
-zlim([-1 1]);
+
+rlim = 1;
+xlim([-rlim rlim]);
+ylim([-rlim rlim]);
+zlim([-rlim rlim]);
+
+for ii = 1:length(X1)
+    t = text(-Z1(ii),Y1(ii),X1(ii),num2str(ii),'FontSize',14);
+    t.Color = [0 0 0];
+end
 
 function [x,y,z] = angle2cart(th, ph, r, degRad)
 if nargin > 3 
@@ -48,4 +63,26 @@ end
 x = r .* sin(th).* cos(ph);
 y = r .* sin(th).* sin(ph);
 z = r .* cos(th);
+end
+
+function [Bx_d,By_d,Bz_d] = upperBucky(Bx,By,Bz)
+    Bx_corr = (Bz > -0.6);
+
+    Bx_1 = Bx(1,:);
+    Bx_2 = Bx(2,:);
+    Bx_1(Bx_corr(2,:) == 0) =[];
+    Bx_2(Bx_corr(2,:) == 0) =[];
+    Bx_d = [Bx_1; Bx_2];
+
+    By_1 = By(1,:);
+    By_2 = By(2,:);
+    By_1(Bx_corr(2,:) == 0) =[];
+    By_2(Bx_corr(2,:) == 0) =[];
+    By_d = [By_1; By_2];
+
+    Bz_1 = Bz(1,:);
+    Bz_2 = Bz(2,:);
+    Bz_1(Bx_corr(2,:) == 0) =[];
+    Bz_2(Bx_corr(2,:) == 0) =[];
+    Bz_d = [Bz_1; Bz_2];
 end
