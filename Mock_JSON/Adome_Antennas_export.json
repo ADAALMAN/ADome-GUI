@@ -17,7 +17,7 @@
         },
         {
           "id": 3,
-          "found": false,
+          "found": true,
           "theta": 2,
           "phi": 1
         }
