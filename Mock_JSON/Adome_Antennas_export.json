@@ -6,20 +6,20 @@
         {
           "id": 1,
           "found": true,
-          "theta": 2,
-          "phi": 1
+          "theta": -7.1,
+          "phi": 148.4
         },
         {
           "id": 2,
           "found": true,
-          "theta": 2,
-          "phi": 1
+          "theta": -7.1,
+          "phi": 148.4
         },
         {
           "id": 3,
           "found": true,
-          "theta": 2,
-          "phi": 1
+          "theta": -7.1,
+          "phi": 148.4
         }
       ]
     },
@@ -29,89 +29,20 @@
         {
           "id": 1,
           "found": true,
-          "theta": 2,
-          "phi": 1
+          "theta": -41.1,
+          "phi": 136.9
         },
         {
           "id": 2,
           "found": true,
-          "theta": 2,
-          "phi": 1
+          "theta": -41.1,
+          "phi": 136.9
         },
         {
           "id": 3,
           "found": true,
-          "theta": 2,
-          "phi": 1
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "leds": [
-        {
-          "id": 1,
-          "found": true,
-          "theta": 2,
-          "phi": 1
-        },
-        {
-          "id": 2,
-          "found": true,
-          "theta": 2,
-          "phi": 1
-        },
-        {
-          "id": 3,
-          "found": true,
-          "theta": 2,
-          "phi": 1
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "leds": [
-        {
-          "id": 1,
-          "found": true,
-          "theta": 2,
-          "phi": 1
-        },
-        {
-          "id": 2,
-          "found": true,
-          "theta": 2,
-          "phi": 1
-        },
-        {
-          "id": 3,
-          "found": true,
-          "theta": 2,
-          "phi": 1
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "leds": [
-        {
-          "id": 1,
-          "found": true,
-          "theta": 2,
-          "phi": 1
-        },
-        {
-          "id": 2,
-          "found": true,
-          "theta": 2,
-          "phi": 1
-        },
-        {
-          "id": 3,
-          "found": true,
-          "theta": 2,
-          "phi": 1
+          "theta": -41.1,
+          "phi": 136.9
         }
       ]
     }
