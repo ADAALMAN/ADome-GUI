@@ -1,27 +1,21 @@
-function outputTextbox(TextArea, cmdData, start)
-    persistent firstLine;
-    persistent endlines;
-    
-    if isempty(firstLine)
-        firstLine = 1;
-        endlines = 0;
+function outputTextbox(TextArea)
+    persistent lastcheck;
+
+    if isempty(lastcheck)
+        lastcheck = 0;
     end
 
-    a = firstLine;
-    if (a == 1)
-        while (strcmp(cmdData{a}, '#end#') == false)
-            data = cmdData{a};
-            TextArea.Value{a} = data;
-            a = a + 1;
-        end
-    elseif (a > 1)
-        endlines = endlines + 1;
-        while (strcmp(cmdData{a}, '#end#') == false)
-            data = cmdData{a};
-            TextArea.Value{a - endlines} = data;
-            a = a + 1;
-        end
+    fid = fopen('Diary/AdomeGUIOutput.log', 'r');
+    check = strjoin(string(char(fread(fid))),'');
+    if strcmp(check, lastcheck) == false
+            rawData = splitlines(check);
+            for i = 1:length(rawData)
+                TextArea.Value{i} = rawData{i};
+            end
+            %outputTextbox(app.TextArea, rawData);
+    else
+        %do nothing
     end
-    scroll(TextArea, 'bottom')
-    firstLine = start;
+    lastcheck = check;
+    fclose(fid);
 end
