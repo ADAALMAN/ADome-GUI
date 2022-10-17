@@ -1,2 +1,8 @@
-
+*.log
+*.json
+Diary/*.log
+Mock_JSON/*.json
+Mock_JSON/*.asv
+Diary/*.asv
+*.asv
 Adome_Antennas.json
