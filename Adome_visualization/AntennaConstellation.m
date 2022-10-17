@@ -4,15 +4,15 @@ function AntennaConstellation(axes, TH, PH)
     
     %Rotation Around X-axis:
     theta=60; %theta 0 results in an offset from the bucky
-    x = X1;
+    x = -(Y1*sin(theta) + Z1*cos(theta));
     y = Y1*cos(theta) - Z1*sin(theta);
-    z = -(Y1*sin(theta) + Z1*cos(theta));
+    z = X1;
     
     for i = 1:length(TH)
                 id{i} = i;
     end
 
-    nodes = plot3(axes, z, y, x, '.','markersize', 20);
+    nodes = plot3(axes, x, y, z, '.','markersize', 20);
     dtRows = [dataTipTextRow("Id:",id),... 
               dataTipTextRow("X:",z),... 
               dataTipTextRow("Y:",y),... 
