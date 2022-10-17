@@ -26,6 +26,17 @@ function displayJSONData(UITable, JSONData, amountOfLeds)
                     UITable.Data{ledRow, thetaColumn} = antennaArray.Antennas(a).leds(l).theta;
                     UITable.Data{ledRow, phiColumn} = antennaArray.Antennas(a).leds(l).phi;
                     
+                    [X1, Y1, Z1] = angle2cart(antennaArray.Antennas(a).leds(l).phi*pi/180, ...
+                                              antennaArray.Antennas(a).leds(l).theta*pi/180, ...
+                                              1);
+                    TH = 60;
+                    x = X1;
+                    y = Y1*cos(TH) - Z1*sin(TH);
+                    z = -(Y1*sin(TH) + Z1*cos(TH));
+                    UITable.Data{ledRow, xColumn} = x;
+                    UITable.Data{ledRow, yColumn} = y;
+                    UITable.Data{ledRow, zColumn} = z;
+
 %                     if (antennaArray.Antennas(a).leds(l).found == false) %if the led is not found
 %                         s = uistyle('BackgroundColor',[1.00 0.00 0.00]);%turn cell color red
 %                         addStyle(UITable,s,'cell',[ledRow,foundColumn]);

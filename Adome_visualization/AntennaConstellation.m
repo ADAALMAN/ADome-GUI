@@ -9,7 +9,7 @@ function AntennaConstellation(axes, TH, PH)
     z = X1;
     
     for i = 1:length(TH)
-                id{i} = i;
+                id{i} = i-1;
     end
 
     nodes = plot3(axes, x, y, z, '.','markersize', 20);
