@@ -1,2 +1,16 @@
-[21-Oct-2022 20:40:46]
+[16-Nov-2022 22:19:46]
 GUI has started.
+[Warning: The specified amount of data was not returned within the Timeout period for 'read'.
+'serialport' unable to read all requested data. For more information on possible reasons, see <a href="matlab: helpview(fullfile(docroot,'instrument','instrument.map'), 'serialport_somedata')"'>serialport Read Warnings</a>.] 
+E0E0E0E0
+ Finding nodes 
+
+[Warning: The specified amount of data was not returned within the Timeout period for 'read'.
+'serialport' unable to read all requested data. For more information on possible reasons, see <a href="matlab: helpview(fullfile(docroot,'instrument','instrument.map'), 'serialport_somedata')"'>serialport Read Warnings</a>.] 
+
+ This system is ready to use for measurements.
+
+[Warning: The specified amount of data was not returned within the Timeout period for 'read'.
+'serialport' unable to read all requested data. For more information on possible reasons, see <a href="matlab: helpview(fullfile(docroot,'instrument','instrument.map'), 'serialport_somedata')"'>serialport Read Warnings</a>.] 
+    {[0]}
+

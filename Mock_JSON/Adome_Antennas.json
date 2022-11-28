@@ -374,20 +374,20 @@
         {
           "id": 1,
           "found": true,
-          "theta": -16.5,
-          "phi": 101.6
+          "theta": -13.3,
+          "phi": 125.3
         },
         {
           "id": 2,
           "found": true,
-          "theta": -16.5,
-          "phi": 101.6
+          "theta": -13.3,
+          "phi": 125.3
         },
         {
           "id": 3,
           "found": true,
-          "theta": -16.5,
-          "phi": 101.6
+          "theta": -13.3,
+          "phi": 125.3
         }
       ]
     },
@@ -398,19 +398,19 @@
           "id": 1,
           "found": true,
           "theta": -16.5,
-          "phi": 78.4
+          "phi": 101.6
         },
         {
           "id": 2,
           "found": true,
           "theta": -16.5,
-          "phi": 78.4
+          "phi": 101.6
         },
         {
           "id": 3,
           "found": true,
           "theta": -16.5,
-          "phi": 78.4
+          "phi": 101.6
         }
       ]
     },
@@ -420,20 +420,20 @@
         {
           "id": 1,
           "found": true,
-          "theta": 6.4,
-          "phi": 70.9
+          "theta": -37.4,
+          "phi": 90
         },
         {
           "id": 2,
           "found": true,
-          "theta": 6.4,
-          "phi": 70.9
+          "theta": -37.4,
+          "phi": 90
         },
         {
           "id": 3,
           "found": true,
-          "theta": 6.4,
-          "phi": 70.9
+          "theta": -37.4,
+          "phi": 90
         }
       ]
     },
@@ -443,6 +443,98 @@
         {
           "id": 1,
           "found": true,
+          "theta": -16.5,
+          "phi": 78.4
+        },
+        {
+          "id": 2,
+          "found": true,
+          "theta": -16.5,
+          "phi": 78.4
+        },
+        {
+          "id": 3,
+          "found": true,
+          "theta": -16.5,
+          "phi": 78.4
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "leds": [
+        {
+          "id": 1,
+          "found": true,
+          "theta": -13.3,
+          "phi": 54.7
+        },
+        {
+          "id": 2,
+          "found": true,
+          "theta": -13.3,
+          "phi": 54.7
+        },
+        {
+          "id": 3,
+          "found": true,
+          "theta": -13.3,
+          "phi": 54.7
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "leds": [
+        {
+          "id": 1,
+          "found": true,
+          "theta": 6.4,
+          "phi": 70.9
+        },
+        {
+          "id": 2,
+          "found": true,
+          "theta": 6.4,
+          "phi": 70.9
+        },
+        {
+          "id": 3,
+          "found": true,
+          "theta": 6.4,
+          "phi": 70.9
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "leds": [
+        {
+          "id": 1,
+          "found": true,
+          "theta": 31.8,
+          "phi": 69.1
+        },
+        {
+          "id": 2,
+          "found": true,
+          "theta": 31.8,
+          "phi": 69.1
+        },
+        {
+          "id": 3,
+          "found": true,
+          "theta": 31.8,
+          "phi": 69.1
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "leds": [
+        {
+          "id": 1,
+          "found": true,
           "theta": 20.1,
           "phi": 90
         },
@@ -461,7 +553,30 @@
       ]
     },
     {
-      "id": 20,
+      "id": 24,
+      "leds": [
+        {
+          "id": 1,
+          "found": true,
+          "theta": 31.7,
+          "phi": 110.9
+        },
+        {
+          "id": 2,
+          "found": true,
+          "theta": 31.7,
+          "phi": 110.9
+        },
+        {
+          "id": 3,
+          "found": true,
+          "theta": 31.7,
+          "phi": 110.9
+        }
+      ]
+    },
+    {
+      "id": 25,
       "leds": [
         {
           "id": 1,
@@ -480,6 +595,98 @@
           "found": true,
           "theta": 0,
           "phi": 90
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "leds": [
+        {
+          "id": 1,
+          "found": true,
+          "theta": 79.8,
+          "phi": 78
+        },
+        {
+          "id": 2,
+          "found": true,
+          "theta": 79.8,
+          "phi": 78
+        },
+        {
+          "id": 3,
+          "found": true,
+          "theta": 79.8,
+          "phi": 78
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "leds": [
+        {
+          "id": 1,
+          "found": true,
+          "theta": 34.9,
+          "phi": 168.2
+        },
+        {
+          "id": 2,
+          "found": true,
+          "theta": 34.9,
+          "phi": 168.2
+        },
+        {
+          "id": 3,
+          "found": true,
+          "theta": 34.9,
+          "phi": 168.2
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "leds": [
+        {
+          "id": 1,
+          "found": true,
+          "theta": -72.18,
+          "phi": 180.11
+        },
+        {
+          "id": 2,
+          "found": true,
+          "theta": -72.18,
+          "phi": 180.11
+        },
+        {
+          "id": 3,
+          "found": true,
+          "theta": -72.18,
+          "phi": 180.11
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "leds": [
+        {
+          "id": 1,
+          "found": true,
+          "theta": 90,
+          "phi": 0
+        },
+        {
+          "id": 2,
+          "found": true,
+          "theta": 90,
+          "phi": 0
+        },
+        {
+          "id": 3,
+          "found": true,
+          "theta": 90,
+          "phi": 0
         }
       ]
     }
